@@ -1,0 +1,773 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;300;500;800&family=Poppins:wght@100;300;500;700&family=Roboto+Condensed:ital,wght@0,300;0,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,700;1,400&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,700&family=Playfair+Display:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,200;1,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,900&display=swap');
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+/* -----------------Home------------------- */
+
+
+.main-section{
+    background: linear-gradient(45deg, rgb(105,152,194),#64dfdf, #48bfe3, #5390d9);
+}
+.logo{
+    width: 150px;
+    border-radius: 8px;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-bottom: 6px;
+    border: solid 1px #2c016d;
+  }
+  
+  #logo-dark{
+    width: 270px;
+    margin-top: 150px;
+  }
+  
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    font-size: 18px;
+    font-family: "lato";
+    color: #5390d9;
+  
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    position: relative;
+    
+  }
+  
+  nav ul li a::after{
+    content: ' ';
+    width: 0;
+    height: 3px;
+    background: #2c016d;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover::after{
+    width: 100%;
+    
+  
+  }
+
+  .nav-link:hover{
+    color: #2c016d;
+    
+  }
+  
+  
+  .header-container{
+    background-color: whitesmoke;
+    
+  }
+  
+  .info{
+    position: absolute;
+    top: 80px;
+    left: 940px;
+    right: 0px;
+  }
+  
+  .btn{
+    display: block;
+    margin: 30px  auto;
+    width: 200px;
+    border:  2px solid whitesmoke;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #27B0FF;
+    background-color: #e0e9f0;
+    text-align: center;
+    font-weight: bold;  
+    font-size: 20px;
+    text-decoration: none;
+    transition: background  1s;
+    position: absolute;
+    left: 35px;
+    top: 400px;
+    border: solid 2px #2c016d;
+  } 
+  
+  .btn a{
+    text-decoration: none;
+    color: #27B0FF;
+    
+  }
+  
+  .btn:hover{
+    background: #2c016d;
+    color: #27B0FF;
+    left: 35px;
+    top: 401px;
+    font-size: 21px;
+  }
+  
+  #home-img{
+    display: block;
+    margin-left: 0px;
+    margin-right: auto;
+    filter: brightness(80%);
+    width: 800px;
+    
+  }
+  .home{
+    background-image: linear-gradient( #27B0FF, #145981);
+    border: 1px solid #2c016d;
+    border-radius: 6px;
+  
+  }
+    
+  /* ---------Services---------- */
+  
+  
+  #services{
+    padding: 30px 0;
+    background: linear-gradient(45deg, #616DFF, #5390d9);
+  }
+  .subtitle{
+    color: white;
+    text-align: center;
+    background: linear-gradient(45deg,#27B0FF, #7149C6);
+    font-size: 40px;
+    border-radius: 8px;
+    box-shadow: 2px 5px 2px #2c016d;
+    margin: 25px 500px;
+  
+  }
+  .services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 40px;
+    margin-top: 100px;
+    margin-bottom: 80px;
+  }
+  .services-list div{
+    background: #5e60ce;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+  }
+  .services-list div img{
+    width: 300px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  .services-list div h1{
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #27B0FF;
+    text-align: center;
+  }
+  .services-list div p{
+    text-decoration: none;
+    color: #5e60ce;
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    display: inline-block;
+    text-align:center;
+  }
+  
+  .services-list div:hover{
+    background-color: #2c016d;
+    transform: translateY(-10px);
+  }
+  .services-list div:hover h1{
+    color: #fff;
+  }
+  /* ----------------citas------------------ */
+  
+.dates{
+  background: linear-gradient(45deg, rgb(105,152,194),#64dfdf, #48bfe3, #5390d9);
+  box-shadow: 0 19px 38px #2c016d, 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.dates{
+  margin-left: 500px;
+  min-height: 100vh;
+}
+
+  .subtitle{
+    margin-bottom: 40px;
+    margin-top:   0px;
+  }
+  
+  .booking{
+    height: 100vh;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    justify-content: flex-start;
+    
+  
+  }
+  .content-left{
+    margin-right: 340px;
+    align-self: center;
+    gap: 10px;
+  
+  }
+  .item{
+    width: 260%;
+    border: 10;
+    outline: none;
+    background: #2c016d;
+    padding: 15px;
+    margin: 12px 0;
+    color:#27B0FF;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  .item2{
+    width: 160%;
+    border: 0;
+    outline: none;
+    background: whitesmoke;
+    padding: 10px;
+    margin: 12px 0;
+    color:#112835;
+    font-size: 16px;
+    border-radius: 10px;
+  
+  }
+  .content-right{
+    display: flex;
+    align-self: center;
+    gap: 10px;
+  }
+  
+  .btn1{
+    width: 190%;
+    background: whitesmoke;
+    padding: 14px;
+    margin: 12px 0;
+    color:#112835;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .btn1:hover{  
+    color:whitesmoke;
+    font-size: 17px;
+    background-color: #2c016d;
+  }
+  
+  .btn2{
+    display: block;
+    margin: 50px  auto;
+    width: fit-content;
+    border:  2px solid whitesmoke;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #27B0FF;
+    background-color: #2c016d;
+    text-align: center;
+    font-weight: bold;  
+    font-size: 20px;
+    text-decoration: none;
+    left: 35px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  #calendario{
+    background-color: #145981;
+  }
+
+  .calendar{
+    font-size: 20px;
+    color: #2c016d;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 620px;
+  }
+
+  .horarios{
+    background-color: #e0e9f0;
+    margin: 0px 470px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-shadow: 2px 5px 2px #2c016d;
+    padding: 20px;
+    width: 570px;
+    margin-left: 400px;
+  }
+
+  .horarios p{
+    color: #2c016d;
+  }
+
+
+  #dates .aviso{
+    font-size: 20px;
+    color: #2c016d;
+  }
+  /*   
+  -----------------aboutMe-------------------- */
+  
+  .aboutMe{
+    height: 100vh;
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    background:#616DFF;
+    box-shadow: 0 19px 38px #2c016d, 0 15px 12px rgba(0,0,0,0.22);
+  }
+  
+  .about{
+   display: flex; 
+   background-color: #2c016d;
+   align-self: center;
+   padding: 50px;
+   border-radius: 50px;
+   border: 1px solid #2c016d
+  
+  }
+  .about img{
+    display: block;
+    width: 150px;
+    height: 170px;
+    border: 2px solid #fff;
+    margin-right: 40px;
+  
+  }
+  .about-img{
+    width: 150px;
+    overflow: hidden;
+    border-radius: 40%;
+    transition: all 0.5s ease-in-out;
+  }
+  .about-img:hover{
+    transform: scale(1.05);
+    width: 152px;
+  }
+  .about-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: #e0edf0;
+    padding: 20px;
+    border-radius: 8px;
+  }
+  .about-content h2,h1,h3,p{
+    color: #27B0FF;
+    text-align: center;
+  }
+
+  .about-content .fisio h1,h3,p {
+    font-size: 22px;
+    color: #2c016d;
+
+  }
+  
+  /* -----------------tarifas-------------- */
+
+  #rates{
+    background: #5e60ce;
+    box-shadow: 0 19px 38px #2c016d, 0 15px 12px rgba(0,0,0,0.22);
+    height: 100vh;
+  }
+  
+  .rates-container{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    height: 70%;
+    background-color: #2c016d;
+    margin-top: 10px;
+    align-items: center;
+    width: 50%;
+    align-self: center;
+    border-radius: 8px;
+    margin-left: 330px;
+    font-size: 25px;
+    padding: 10px;
+ 
+  }
+
+  .rates-container p{
+    color: white;
+  }
+  
+  /* -------------contactanos----------- */
+  
+  #contact{
+    background: #c0eaf3;
+    box-shadow: 0 19px 38px #2c016d, 0 15px 12px rgba(0,0,0,0.22);
+  }
+
+  .contact-content{
+      display: flex;
+  }
+  
+  .row{
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-left{
+    flex-basis: 20%;
+    
+  }
+  .contact-right{
+    flex-basis: 60%;
+  }
+
+  .contact-left p{
+    margin-top: 10px;
+    font-size:20px ;
+    color: #2c016d;
+    margin-right : 80px;
+  }
+
+
+  
+  .contact-right form button{
+        display: inline;
+        align-items: center;
+        bottom: -30px;
+  }
+  
+  form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #2c016d;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+  }
+
+footer h4{
+  color: #27B0FF;
+}
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #2c016d;
+    font-weight: 300;
+    margin-top: 0px;
+  }
+  
+  /* --------Responsive---------- */
+  
+  @media only screen and (max-width: 768px) { 
+
+    html,body { 
+      max-width: 100%;
+      overflow-x: hidden
+    }  
+
+
+    .logo {
+      width:80px;
+    }
+
+
+    nav{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex-wrap: wrap;
+     
+    }
+
+    nav ul li{
+      
+      display: inline-block;
+      list-style: none;
+      margin: 16px 8px;
+      font-size: 14px;
+      font-family: 'lato', 'Arial Narrow', Arial, sans-serif;
+      cursor: pointer;
+    }
+    
+    nav ul li a{
+      text-decoration: none;
+      position: relative;
+      background-color: #c0eaf3;
+     
+    }
+    
+    nav ul li a::after{
+      content: ' ';
+      width: 0;
+      height: 3px;
+      background: #27B0FF;
+      position: absolute;
+      left:0;
+      bottom: -6px;
+      transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+      width: 80%;
+    
+    
+    }
+    .nav-link:hover{
+      color: #27B0FF;
+    }
+
+
+    #home-img{
+      width: 300px;
+    }
+
+    .info{
+      position: absolute;
+      top: 40px;
+      left: 110px;
+      right: 0px;
+      opacity: 0.7;
+      
+    }
+    
+    .btn{
+      display: block;
+      margin: 30px  auto;
+      width: 200px;
+      border:  2px solid whitesmoke;
+      padding: 10px 10px;
+      border-radius: 10px;
+      color: #27B0FF;
+      background-color: #e0e9f0;
+      text-align: center;
+      font-weight: bold;  
+      font-size: 14px;
+      text-decoration: none;
+      transition: background  1s;
+      position: absolute;
+      left: 35px;
+      top: 380px;
+      border: solid 2px #2c016d;
+    } 
+
+    .btn:hover{
+      background: #2c016d;
+      color: #27B0FF;
+      left: 35px;
+      top: 390px;
+      font-size: 16px;
+    }
+
+      /* ----------------citas------------------ */
+     
+      .subtitle{
+        margin-bottom: 70px;
+        margin-top:   0px;
+      }
+
+      .dates{
+        margin-left: 3px;
+        min-height: 100vh;
+        
+      }
+
+      #calendario{
+        background-color: #145981;
+      }
+    
+      .calendar{
+        font-size: 16px;
+        color: #2c016d;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 170px;
+      }
+
+      .horarios{
+        background-color: #e0e9f0;
+        margin: 0px 470px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        box-shadow: 2px 5px 2px #2c016d;
+        padding: 20px;
+        width: 320px;
+        margin-left: 20px;
+      }
+
+
+      .content-left{
+        margin-right: 255px;
+        align-self: center;
+        gap: 4px;
+      
+      }
+
+      .content-right{
+        display: flex;
+        align-self: center;
+        gap: 4px;
+      }
+
+      .horarios p{
+        color: #2c016d;
+        font-size: 14px;
+      }
+
+     /* -----------------aboutMe-------------------- */
+
+     .about{
+      display: flex; 
+      background-color: #2c016d;
+      align-self: center;
+      padding: 50px;
+      border-radius: 20px;
+      border: 1px solid whitesmoke;
+      width: 360px;
+      height: 100vh;
+     
+     }
+     .about img{
+       display: none;
+     }
+     .about-img{
+       width: 20px;
+       overflow: hidden;
+       border-radius: 40%;
+       transition: all 0.5s ease-in-out;
+     }
+
+     .about-content .fisio h1,h3,p {
+      font-size: 18px;
+      color: #2c016d;
+
+    }
+
+
+      /* -----------------tarifas-------------- */
+
+      .rates-container{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        width: 70%;
+        height: 40%;
+        background-color: #2c016d;
+        margin-top: 10px;
+        align-items: center;
+        width: 70%;
+        align-self: center;
+        border-radius: 8px;
+        margin-left: 40px;
+        font-size: 16px;
+        padding: 10px;
+     
+      }
+
+       /* -------------contactanos----------- */
+  
+
+  .contact-content{
+   display: block;
+    margin-left: 0px;
+  }
+  
+  .row{
+    margin-top: 0px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .contact-left{
+    flex-basis:0%;
+
+    
+  }
+  .contact-right{
+    flex-basis:0%;
+  
+  }
+
+  .contact-left p{
+    margin-top: 10px;
+    font-size:14px ;
+    color: #2c016d;
+    margin-left : 20px;
+  }
+
+
+  
+  .contact-right form button{
+        display: inline;
+        align-items: center;
+        bottom: 10px;
+  }
+  
+  form input, form textarea{
+    width: 280px;
+    border: 0;
+    outline: none;
+    background: #2c016d;
+    padding: 10px;
+    margin: 10px 0;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 6px;
+  }
+
+footer h4{
+  color: #27B0FF;
+}
+
+  .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #2c016d;
+    font-weight: 300;
+    margin-top: 0px;
+  }
+
+
+
+
+
+
+
+   } 
