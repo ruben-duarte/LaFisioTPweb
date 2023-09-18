@@ -1,3 +1,3 @@
-# FisioTP
+# FisioTP Web
 
-please visit https://ruben-duarte.github.io/LaFisioTP/
+
